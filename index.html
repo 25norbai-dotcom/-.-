@@ -68,17 +68,21 @@ pre{ background:#0f172a; color:#e6eef8; padding:12px; border-radius:8px; overflo
 </div>
 
 <script>
-document.getElementById('now').textContent = new Date().toLocaleString();
-document.getElementById('greetBtn').addEventListener('click', function(){
-const out = document.getElementById('output');
-out.innerHTML = '<strong>Цікавий факт:  </strong> штучний інтелект уже використовується в медицині, освіті, транспорті та багатьох інших сферах. <br>' +
-  'Натисніть кнопку "Основні напрямки", щоб показати/сховати додатковий код.';
-});
+  document.getElementById('now').textContent = new Date().toLocaleString();
 
-document.getElementById('showCode').addEventListener('click', function(){
-const pre = document.getElementById('codePreview');
-pre.style.display = (pre.style.display === 'none' || pre.style.display === '') ? 'block' : 'none';
-});
+  document.getElementById('greetBtn').addEventListener('click', function() {
+    var out = document.getElementById('output');
+    out.innerHTML = '<strong>Цікавий факт:</strong> штучний інтелект уже використовується в медицині, освіті, транспорті та багатьох інших сферах.';
+  });
+
+  document.getElementById('showCode').addEventListener('click', function() {
+    var pre = document.getElementById('codePreview');
+    if (pre.style.display === 'none' || pre.style.display === '') {
+      pre.style.display = 'block';
+    } else {
+      pre.style.display = 'none';
+    }
+  });
 </script>
 </body>
 </html>
