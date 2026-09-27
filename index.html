@@ -33,11 +33,11 @@ pre{ background:#0f172a; color:#e6eef8; padding:12px; border-radius:8px; overflo
 
 <main style="margin-top:18px">
 <section class="card">
-<h2 id="welcome">Welcome!</h2>
+<h2 id="welcome">Сучасні технології</h2>
 <p style="color:var(--muted)">Сучасні технології відіграють важливу роль у житті людини. Вони допомагають нам навчатися, працювати, спілкуватися та швидше отримувати необхідну інформацію.</p>
 <div class="actions">
-<button class="btn-primary" id="greetBtn">Greet me</button>
-<button class="btn-ghost" id="showCode">Show HTML sample</button>
+<button class="btn-primary" id="greetBtn">Цікавий факт</button>
+<button class="btn-ghost" id="showCode">Основні напрямки </button>
 </div>
 <div id="output" style="margin-top:14px"></div>
 </section>
@@ -46,18 +46,19 @@ pre{ background:#0f172a; color:#e6eef8; padding:12px; border-radius:8px; overflo
 <h3 id="about">Основні сучасні технології</h3>
 <p style="color:var(--muted)">До найпоширеніших сучасних технологій належать:
 
-Штучний інтелект
-Робототехніка
-Віртуальна та доповнена реальність
-Хмарні технології
-Інтернет речей
-3D-друк</p>
+Штучний інтелект.
+Робототехніка.
+Віртуальна та доповнена реальність.
+Хмарні технології.
+Інтернет речей.
+3D-друк.</p>
 </section>
 
 <section class="card" style="margin-top:18px">
 <h3 id="contact">Значення технологій</h3>
 <p style="color:var(--muted)">Технології використовуються в медицині, освіті, промисловості, транспорті та повсякденному житті. Наприклад, смартфони дозволяють спілкуватися на відстані, а штучний інтелект допомагає аналізувати великі обсяги інформації.</p>
-<pre id="codePreview" style="display:none">&lt;!-- example: put your snippet here --&gt;&#10;&lt;p&gt;Hello world&lt;/p&gt;</pre>
+<pre id="codePreview" style="display:none">&lt;Основні напрямки: штучний інтелект, робототехніка, VR/AR, хмарні технології, Інтернет речей та 3D-друк.
+ --&gt;&#10;&lt;p&gt;Hello world&lt;/p&gt;</pre>
 </section>
 </main>
 
@@ -71,7 +72,8 @@ document.getElementById('now').textContent = new Date().toLocaleString();
 document.getElementById('greetBtn').addEventListener('click', function(){
 const out = document.getElementById('output');
 out.innerHTML = '<strong>Цікавий факт: </strong> штучний інтелект уже використовується в медицині, освіті, транспорті та багатьох інших сферах. \n' +
-'Try the "Показати основні напрямки" button to reveal a small snippet.';
+'Try the "Основні напрямки: штучний інтелект, робототехніка, VR/AR, хмарні технології, Інтернет речей та 3D-друк.
+" button to reveal a small snippet.';
 });
 
 document.getElementById('showCode').addEventListener('click', function(){
